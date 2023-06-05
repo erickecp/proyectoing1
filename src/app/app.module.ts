@@ -10,10 +10,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { LoginComponent } from './Serv.log/login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
-import { FormsComponent } from './Serv.log/forms/forms.component';
+import { FormsComponent } from './pages/forms/forms.component';
+
 
 
 
@@ -35,7 +36,8 @@ import { FormsComponent } from './Serv.log/forms/forms.component';
     MatButtonModule,
     MatSnackBarModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatSlideToggleModule
   ],
   providers: [AlertServiceService],
   bootstrap: [AppComponent]
