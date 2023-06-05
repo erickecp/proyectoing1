@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiService } from './service/api.service';
+import { ApiService } from './services/api.service';
 import { AlertServiceService } from './services/alert-service.service';
 
 @Component({
