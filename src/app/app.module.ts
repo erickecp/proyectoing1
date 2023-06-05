@@ -10,20 +10,32 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { LoginComponent } from './Serv.log/login/login.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsComponent } from './Serv.log/forms/forms.component';
+
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    HttpClientModule
+    HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule,
+    MatIconModule
   ],
   providers: [AlertServiceService],
   bootstrap: [AppComponent]
