@@ -1,0 +1,11 @@
+<mat-card *ngIf="personaje | async as personaje">
+    <mat-card-header>
+      <mat-card-title>{{personaje.name }}</mat-card-title>
+      <mat-card-subtitle>{{personaje.origin.name }}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="img" mat-card-image [src]="personaje.image" >
+    <mat-card-content>
+    Locacion:{{personaje. location. name}}
+    Estatus: {{ personaje.status }}
+    </mat-card-content>
+  </mat-card>
